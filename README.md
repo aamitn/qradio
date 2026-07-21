@@ -7,7 +7,7 @@ Currently deployed and tested on the **STM32F411 "Blackpill"** platform, and **E
 Example CubeIDE+CubeMX Project is in `bp_testmod` folder.
 
 <img src="./images/1.png">
-<img src="./images/2.png">
+<img src="./images/3.png">
 
 ## ✨ Features
 
