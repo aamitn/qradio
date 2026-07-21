@@ -1,4 +1,4 @@
-# Quectel GSM/LTE AT-Command Driver
+# *QRadio* : Quectel GSM/LTE AT-Command Driver
 
 A robust, platform-agnostic C driver for Quectel-style GSM/LTE cellular modules. This library provides a high-level API for HTTP/HTTPS (with modern TLS/SNI support), SMS, and network diagnostics, built on a non-blocking DMA UART architecture.
 
@@ -101,17 +101,17 @@ if (status == HAL_OK) {
 
 You can override the default buffer sizes and debug behavior by setting these macros in your build environment (or at the top of gsm.h):
 
-    - **GSM_RX_BUFFER_SIZE (Default: 512)**: Adjust based on the largest expected HTTP response chunk.
-    - **GSM_DEBUG_ENABLED (Default: 1)**: Set to 0 to completely strip out debug strings and HAL_UART_Transmit blocking calls for production firmware.
-    - **GSM_DEBUG_BUFFER_SIZE (Default: 600)**: Maximum length of a single debug log line.
+- **GSM_RX_BUFFER_SIZE (Default: 512)**: Adjust based on the largest expected HTTP response chunk.
+- **GSM_DEBUG_ENABLED (Default: 1)**: Set to 0 to completely strip out debug strings and HAL_UART_Transmit blocking calls for production firmware.
+- **GSM_DEBUG_BUFFER_SIZE (Default: 600)**: Maximum length of a single debug log line.
 
 ## 📡 Supported APNs
 
 The GSM_Init() sequence currently configures the PDP context. If you are modifying this for different regions, update the AT+QICSGP command in gsm.c:
 
-    - Vodafone (India): portalnmms
-    - Jio: JIONET
-    - Airtel: airtelgprs.com
-    - BSNL: bsnlnet
+- Vodafone (India): portalnmms
+- Jio: JIONET
+- Airtel: airtelgprs.com
+- BSNL: bsnlnet
 
 Maintained by Amit| *Bitmutex Technologies*
