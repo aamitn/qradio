@@ -137,7 +137,7 @@ int main(void)
 		  GSM_GetNetworkStatus(&current_network_status);
 
 		  // Call  built-in library function to print the full status to the debug serial
-		   GSM_PrintNetworkStatus();
+		  GSM_PrintNetworkStatus();
 
 		  if (current_network_status.rssi_valid) {
 			  printf("Signal: %d dBm\r\n", current_network_status.rssi_dbm);

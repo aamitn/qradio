@@ -1,5 +1,6 @@
 /**
  ******************************************************************************
+ * @author    bigwiz
  * @file    gsm.c
  * @brief   Platform-agnostic Quectel-style GSM/LTE AT-command driver.
  *          See gsm.h for integration instructions.
