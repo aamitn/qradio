@@ -6,6 +6,9 @@ Currently deployed and tested on the **STM32F411 "Blackpill"** platform, and **E
 
 Example CubeIDE+CubeMX Project is in `bp_testmod` folder.
 
+<img src="./images/1.png">
+<img src="./images/2.png">
+
 ## ✨ Features
 
 * **Zero Busy-Wait Reception:** Uses DMA + IDLE-line reception (`HAL_UARTEx_ReceiveToIdle_DMA`). The CPU is completely free while waiting for modem responses.
