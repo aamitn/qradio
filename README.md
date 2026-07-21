@@ -99,7 +99,7 @@ if (status == HAL_OK) {
 
 ## ⚙️ Configuration
 
-You can override the default buffer sizes and debug behavior by setting these macros in your build environment (or at the top of gsm.h):
+You can override the default buffer sizes and debug behavior by setting these macros in your build environment (or at the top of `gsm.h`):
 
 - **GSM_RX_BUFFER_SIZE (Default: 512)**: Adjust based on the largest expected HTTP response chunk.
 - **GSM_DEBUG_ENABLED (Default: 1)**: Set to 0 to completely strip out debug strings and HAL_UART_Transmit blocking calls for production firmware.
@@ -107,11 +107,11 @@ You can override the default buffer sizes and debug behavior by setting these ma
 
 ## 📡 Supported APNs
 
-The GSM_Init() sequence currently configures the PDP context. If you are modifying this for different regions, update the AT+QICSGP command in gsm.c:
+The GSM_Init() sequence currently configures the PDP context. If you are modifying this for different regions, update the AT+QICSGP command in `gsm.c`:
 
 - Vodafone (India): portalnmms
 - Jio: JIONET
 - Airtel: airtelgprs.com
 - BSNL: bsnlnet
 
-Maintained by Amit| *Bitmutex Technologies*
+Maintained by Amit | *Bitmutex Technologies*
